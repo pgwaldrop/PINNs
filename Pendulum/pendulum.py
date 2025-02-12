@@ -83,7 +83,7 @@ optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
 
 # training
 for epoch in range(100000):
-    ts = torch.randn(512,1)*10
+    ts = torch.rand(512,1)*10
     ts.requires_grad = True
     optimizer.zero_grad()
 
